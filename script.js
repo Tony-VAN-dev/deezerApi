@@ -130,10 +130,10 @@ function afficherTrack(track) {
 
             resultContainer.appendChild(trackCard);
 
-
         trackCard.addEventListener("click", function () {
-            audio.src = track.preview;
-            audio.play();
+            audioPlayer.src = track.preview;
+            console.log(track.artist.name);
+            audioPlayer.play();
         });
 
         // console.log("Image : " + track.album.cover);
